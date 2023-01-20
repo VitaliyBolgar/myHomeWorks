@@ -1,14 +1,13 @@
-const inp = document.querySelector(".inp");
-const btn = document.querySelector(".btn");
-const div = document.querySelector("div");
-
-
-const arrPoke = [];
 /***
  * 1 этап - функция для получения покемонов по имени
  * 2 - сохранение покемона в общий массив
  * 3 - перерисовка массива покемонов
  */
+const inp = document.querySelector(".inp");
+const btn = document.querySelector(".btn");
+const div = document.querySelector("div");
+
+const arrPoke = [];
 
 
 /***
@@ -41,8 +40,11 @@ const render = () => {
 	div.innerHTML = '';
 	arrPoke.forEach((poke) => {
 		const image = document.createElement("img");
+		const txt = document.createElement("p");
 		image.src = poke.sprites.front_default;
+		txt.innerHTML = poke.abilities[0].ability.name;
 		div.append(image);
+		div.append(txt);
 	});
 };
 
