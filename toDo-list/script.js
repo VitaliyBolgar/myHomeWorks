@@ -24,7 +24,7 @@ btn.addEventListener('click', () => {
 	const task = {}; // вот он наш объект
 	console.log(task);
 	task.text = inp.value;
-	task.id = new Date().getTime(); //время в виде целого числа длинного 
+	task.id = new Date().getTime(); //метод пишет время в виде целого числа длинного 
 	task.done = false;
 	// console.log(task);
 	createTask(task);
@@ -53,10 +53,11 @@ const renderTaskList = () => {
 const removeTask = (task) => {
 	//что принимает? что возвращает?
 	// принимает задачу и возвращает пустоту
+	// Нужно найти в нашем массиве конкретно этот объект 
 	// теперь можно применять splice (ищем положения таски в массиве)
 
 	const index = tasks.findIndex((t) => { return t.id === task.id })
-	// как примет статус исти>ы
+	// как примет статус истины
 	tasks.splice(index, 1)
 	console.log(index);
 
