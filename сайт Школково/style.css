@@ -1,0 +1,63 @@
+.img{
+	background: url(./);
+}
+.logo{
+	background: url(./Fkmobw.png);
+	position: absolute;
+	width: 119px;
+	height: 119px;
+	left: 80px;
+	top: 42px;
+	
+}
+
+.h1{
+	position: absolute;
+width: 316px;
+height: 77px;
+left: 226px;
+top: 39px;
+margin: 0	;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+
+color: #000000;
+}
+
+.h4{
+	position: absolute;
+	width: 321px;
+	height: 31px;
+	left: 226px;
+	top: 122px;
+	margin: 0	;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 26px;
+	line-height: 31px;
+
+	color: #000000;
+
+}
+
+.links{
+	position: absolute;
+	width: 617px;
+	height: 72px;
+	left: 743px;
+	top: 110px;
+
+}
+
+.links_flex{
+	display: flex;
+	width: 617px;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
